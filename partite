@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabellini Partite</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+    }
+    .week-row {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .day-col {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      flex: 1;
+    }
+    .day-header {
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .match {
+      margin-bottom: 15px;
+    }
+    .score {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .time-range {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 3px;
+    }
+    .players {
+      display: flex;
+      gap: 20px;
+    }
+    .team {
+      flex: 1;
+    }
+    .player-row {
+      display: grid;
+      grid-template-columns: 150px auto;
+      gap: 8px;
+      margin-bottom: 4px;
+      font-size: 0.95em;
+      align-items: center;
+    }
+    .player-name {
+      white-space: nowrap;
+    }
+    .player-gol {
+      white-space: nowrap;
+      margin-left: 10px;
+    }
+    .ospite {
+      color: red;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tabellini Partite</h1>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 02 set 24</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 22:00</div>
+<div class="score">🟠11 - 10🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Santo C</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 09 set 24</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 22:00</div>
+<div class="score">🟠7 - 7🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Dario C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 22:00</div>
+<div class="score">🟠4 - 4🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 22:00</div>
+<div class="score">🟢2 - 2🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Dario C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 16 set 24</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 20:30</div>
+<div class="score">🟠4 - 6🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Xheris D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟢8 - 10🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Xheris D</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Enea K</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Alessandro C</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name ospite">🟡 Paolo prova 1</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 19 set 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:30</div>
+<div class="score">⚫️10 - 10🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Michele Me</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 23 set 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵13 - 7🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Alessandro C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Enea K</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Marco P</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 26 set 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵10 - 10🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🔵 Hussain</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Enea K</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Michele Me</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Beppe C</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 30 set 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵11 - 12🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Enea K</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 03 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠11 - 11🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 José A</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name ospite">🟠 Dragoș 1prova</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Marco P</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 07 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠8 - 14🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 José A</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name ospite">🔵 SIMONE PROVA 1</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 10 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">⚫️5 - 6🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Dario C</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Marco P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟡6 - 8🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Giuseppe G</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Enea K</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 14 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟡12 - 5⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 José A</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Xheris D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Alessandro C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Alvi P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 17 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡2 - 4🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Enea K</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Lati N</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵6 - 8⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 José A</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Dario C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 21 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵14 - 11🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Santo C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🟠 1</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 24 ott 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡6 - 2🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Xheris D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟠7 - 2⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Enea K</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Dario C</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 28 ott 24</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 20:30</div>
+<div class="score">🔴6 - 8⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Alvi P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Alessandro C</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵16 - 14🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⭐⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 04 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠9 - 9🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🟠 Markus</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 07 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡4 - 6⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Xheris D</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟠4 - 2🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 11 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">⚫️7 - 10🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Lorenzo</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name ospite">⚫️ Riki</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Alvi P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Alessandro C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 14 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟠6 - 6🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Xheris D</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Enea K</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟠7 - 2🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Beppe C</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giorgio P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 18 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">⚫️15 - 10🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Alvi P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 21 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡8 - 9🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Xheris D</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟠3 - 3⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">gio 28 nov 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡6 - 2⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Astrit L</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 02 dic 24</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔴7 - 3⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Astrit L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Francesco Di N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 05 dic 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡6 - 2🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Xheris D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵3 - 7⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Lorenzo</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">gio 12 dic 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">⚫️6 - 4🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">⚫️10 - 3🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Guglielmo V</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Michele Me</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Santo C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 16 dic 24</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">⚫️5 - 6🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Giorgio P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">⚫️7 - 5🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Luca F</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Geri S</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Salvatore M</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 23 dic 24</div>
+<div class="match">
+<div class="time-range">ore 19:30 - 21:00</div>
+<div class="score">🔵13 - 14🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Beppe C</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Lati N</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">gio 09 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 21:00</div>
+<div class="score">🔵4 - 3🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">⚫️3 - 12🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Santo C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Selam B</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Reinaldo I</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 13 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">⚫️7 - 8🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">⚫️ Gennaro prima prova</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Armando R</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Gabriele D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 16 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠7 - 5🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Salvatore M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 20 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵13 - 7🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 23 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠5 - 5🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Oussama T</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 27 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵7 - 10🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Oussama T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 30 gen 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 22:00</div>
+<div class="score">🔵9 - 11🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Beppe C</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Selam B</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Astrit L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Geri S</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 03 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟡8 - 9⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Geri S</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Salvatore M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 06 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟢8 - 13🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Astrit L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Gabriele D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Oussama T</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 10 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 22:00</div>
+<div class="score">⚫️5 - 10🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">⚫️ Simone prova 2</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Geri S</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 22:00</div>
+<div class="score">⚫️5 - 8🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">⚫️ Simone prova 2</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 22:00</div>
+<div class="score">🔴7 - 4🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Denny P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Geri S</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 13 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵3 - 4🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔴6 - 7⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Salvatore M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Astrit L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 17 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵0 - 0🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Bogdan D</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 20 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔴2 - 8🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Marco P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Luca F</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">⚫️5 - 2🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Geri S</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Salvatore M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Damiano N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 24 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵11 - 9🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🟠 Simone</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵10 - 3🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 27 feb 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡7 - 6🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Marco P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵1 - 3⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Astrit L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ Leo S</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">gio 06 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">⚫️7 - 2🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Astrit L</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Beppe C</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵8 - 5🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Santo C</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 10 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔴11 - 9🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giorgio P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟢3 - 12⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🟢 Francesco(prova1)</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Gabriele D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Marco P</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Oussama T</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 13 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵5 - 6🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔴2 - 8🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Oussama T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Giorgio P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Santo C</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 17 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵12 - 6🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🔵 Francesco amico panza Prova2</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name ospite">🟠 Amico Lati</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 20 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟠4 - 4⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Santo C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Oussama T</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Astrit L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵10 - 6🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Beppe C</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 24 mar 25</div>
+<div class="match">
+<div class="time-range">ore 19:00 - 20:00</div>
+<div class="score">🟠0 - 0🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🟠 Christian prova 2</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Do</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵12 - 12🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Do</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🟠 Christian Prova2</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 27 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟡1 - 8🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Santo C</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Salvatore M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Astrit L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Geri S</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟡3 - 6🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Gabriele D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 31 mar 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔴12 - 17🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Armando R</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Michele Me</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Gabriele D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Do</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 07 apr 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠6 - 7🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🟠 Christian nuovo socio</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 10 apr 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠7 - 9🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Beppe C</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Giovanni B</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 14 apr 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠6 - 10🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Astrit L</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Cristian B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Dario C</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 28 apr 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠14 - 12🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Geri S</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Cristian B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 05 mag 25</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵13 - 9🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Astrit L</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 12 mag 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔴11 - 10🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Cristian B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Giovanni B</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 15 mag 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵11 - 7🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🔵 Daniel</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Cristian B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Francesco Di N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name ospite">🟠 Aimén prova1</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 19 mag 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 21:00</div>
+<div class="score">🔵2 - 9🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🔵 Osman</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵4 - 7🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🔵 Osman</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Armando R</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Francesco Di N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 22 mag 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔵3 - 4🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Astrit L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔴7 - 5🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Salvatore M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Giorgio P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Marco P</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 26 mag 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔴13 - 8🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Cristian B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 29 mag 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔴9 - 1🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Salvatore M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Giorgio P</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Astrit L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟡9 - 5🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Giovanni B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Marco P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">gio 05 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔴2 - 7🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Giorgio P</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Salvatore M</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟢1 - 6⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Astrit L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Oussama T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Claudiu H</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 09 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔴6 - 11🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Cristian B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Giovanni B</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 12 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🔴3 - 5🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Salvatore M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Giorgio P</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Giovanni B</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵5 - 6🟠</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Astrit L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Michele Me</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 16 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔵7 - 15🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Artan L</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Selam B</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Denny P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name ospite">🔵 Azzeddine</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Guglielmo V</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Francesco Di N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name ospite">🔴 Marcello</span><span class="player-gol">⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 19 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟠2 - 6🟢</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Luca F</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏀 Aleks M</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔵6 - 4🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Astrit L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Francesco Di N</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 23 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🔴8 - 7⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Cristian B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Francesco Do</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Francesco Di N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lorenzo</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Denny P</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Beppe C</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Armando R</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 26 giu 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟢4 - 3🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏐 Astrit L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Oussama T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Reinaldo I</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Armando R</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Damiano N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏐 Fabio M</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Bledi T</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🔴7 - 10🟡</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Giorgio P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Beppe C</span><span class="player-gol">⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">gio 03 lug 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 21:00</div>
+<div class="score">🟢8 - 10🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟢 🏐 Giuseppe G</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Damiano N</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟢 🏀 Giovanni B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟢 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Giorgio P</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Claudiu H</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Oussama T</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Astrit L</span><span class="player-gol">⚽⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+<div class="match">
+<div class="time-range">ore 21:00 - 22:00</div>
+<div class="score">🟡4 - 4🔵</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔵 🏐 Astrit L</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏐 Bogdan D</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🔵 🏀 Oussama T</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔵 🏀 Reinaldo I</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 07 lug 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟡8 - 8⚫️</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Armando R</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Francesco Di N</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Fabio M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Giovanni B</span><span class="player-gol"></span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">⚫️ 🏐 Lorenzo</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Selam B</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">⚫️ 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">⚫️ 🏐 Bogdan D</span><span class="player-gol">⚽⚽⚽⚽</span></div></div>
+</div>
+</div>
+</div>
+<div class="day-col">
+<div class="day-header">gio 10 lug 25</div>
+<div class="match">
+<div class="time-range">ore 20:00 - 22:00</div>
+<div class="score">🟡7 - 12🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟡 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏀 Aleks M</span><span class="player-gol">⚽⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Selam B</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏐 Guglielmo V</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Lorenzo</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟡 🏀 Luca F</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟡 🏐 Beppe C</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Bledi T</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Fabio M</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Oussama T</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Geri S</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏀 Claudiu H</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Bogdan D</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name ospite">🔴 Simone prova1 amicoBog</span><span class="player-gol"></span></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="week-row">
+<div class="day-col">
+<div class="day-header">lun 14 lug 25</div>
+<div class="match">
+<div class="time-range">ore 20:30 - 22:00</div>
+<div class="score">🟠15 - 10🔴</div>
+<div class="players">
+<div class="team">
+<div class="player-row"><span class="player-name">🟠 🏐 Armando R</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🟠 🏐 Giuseppe G</span><span class="player-gol">⚽⚽⚽⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Michele Me</span><span class="player-gol">⚽</span></div><div class="player-row"><span class="player-name">🟠 🏀 Bledi T</span><span class="player-gol">⚽⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🟠 🏐 Lorenzo</span><span class="player-gol">⚽⚽⚽</span></div></div>
+<div class="team">
+<div class="player-row"><span class="player-name">🔴 🏀 Artan L</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Selam B</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏀 Reinaldo I</span><span class="player-gol"></span></div><div class="player-row"><span class="player-name">🔴 🏐 Lati N</span><span class="player-gol">⚽⚽⚽</span></div><div class="player-row"><span class="player-name">🔴 🏐 Alessandro C</span><span class="player-gol">⚽</span></div></div>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
